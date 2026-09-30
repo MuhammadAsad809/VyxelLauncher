@@ -1,0 +1,4 @@
+*.jks
+*.keystore
+.vyxel-signing-meta
+keystore.properties
