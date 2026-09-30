@@ -89,11 +89,14 @@ object LeafShape : Shape {
         val small = size.minDimension * 0.18f
         return Outline.Rounded(
             androidx.compose.ui.geometry.RoundRect(
-                0f, 0f, size.width, size.height,
-                topLeft = androidx.compose.ui.geometry.CornerRadius(big),
-                topRight = androidx.compose.ui.geometry.CornerRadius(small),
-                bottomRight = androidx.compose.ui.geometry.CornerRadius(big),
-                bottomLeft = androidx.compose.ui.geometry.CornerRadius(small)
+                left = 0f,
+                top = 0f,
+                right = size.width,
+                bottom = size.height,
+                topLeftCornerRadius = androidx.compose.ui.geometry.CornerRadius(big),
+                topRightCornerRadius = androidx.compose.ui.geometry.CornerRadius(small),
+                bottomRightCornerRadius = androidx.compose.ui.geometry.CornerRadius(big),
+                bottomLeftCornerRadius = androidx.compose.ui.geometry.CornerRadius(small)
             )
         )
     }
